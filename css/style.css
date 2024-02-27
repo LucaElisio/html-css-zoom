@@ -1,5 +1,6 @@
 :root{
     --white-color: white;
+    --green-color: #4BC800;
     --btm-height: 80px;
 }
 
@@ -36,7 +37,11 @@ img{
 }
 
 .fs-30{
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.green{
+    color: var(--green-color);
 }
 
 /* MAIN */
@@ -90,24 +95,30 @@ img{
     height: var(--btm-height);
     background-color: #222222;
     display: flex;
+    justify-content: space-between;
 }
 
 .bottom-col{
-    width: calc(100% / 3);
+
     align-items: center;
-    /* debug */
-    border: 1px solid white;
+
 }
 
-.bottom-col-sx{
+.bottom-col-sx, .bottom-col-ct{
     align-items: center;
 }
 
-.bottom-col-sx div{
+.bottom-col-sx div, .bottom-col-ct div{
     text-align: center;
     padding: 10px;
-    /* debug */
-    /* border: 1px solid orange; */
+
+}
+
+.end-meeting{
+    color: red;
+    padding: 0px 10px;
+    background-color: #4A4A4A;
+    line-height: var(--btm-height);
 }
 
 i{
