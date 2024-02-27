@@ -1,3 +1,7 @@
+:root{
+    --white-color: white;
+}
+
 /* RESET */
 *{
     margin: 0;
@@ -22,6 +26,10 @@ img{
     flex-wrap: wrap;
 }
 
+.c-white{
+    color: var(--white-color);
+}
+
 /* MAIN */
 .webapp{
     width: 100%;
@@ -35,8 +43,8 @@ img{
     padding: 50px 50px 20px 50px;
     width: 100%;
     height: calc(100% - 120px);
-    /* debug */
-    background-color: lightgreen;
+    overflow-y: scroll;
+    background-color: black;
 }
 
 .btm-s{
@@ -50,11 +58,25 @@ img{
 }
 
 .col{
-    width: calc(100% / 7 - 4px);
-    margin: 2px;
+    width: calc(100% / 7);
+}
 
-    /* debug */
-    /* height: 100px; */
-    background-color: lightgreen;
-    border: 1px solid black;
+.card{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.card-img{
+    /* ???????? */
+    display: flex;
+    position: relative;
+}
+
+.img-overlay{
+    display: block;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
 }
