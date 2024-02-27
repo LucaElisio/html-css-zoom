@@ -1,5 +1,6 @@
 :root{
     --white-color: white;
+    --btm-height: 80px;
 }
 
 /* RESET */
@@ -30,6 +31,14 @@ img{
     color: var(--white-color);
 }
 
+.block{
+    display: block;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
 /* MAIN */
 .webapp{
     width: 100%;
@@ -39,22 +48,13 @@ img{
     background-color: lightcyan;
 }
 
+/* Top Section */
 .top-s{
     padding: 50px 50px 20px 50px;
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - var(--btm-height));
     overflow-y: scroll;
     background-color: black;
-}
-
-.btm-s{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-    /* debug */
-    background-color: lightcoral;
 }
 
 .col{
@@ -79,4 +79,37 @@ img{
     left: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Bottom Section */
+.btm-s{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--btm-height);
+    background-color: #222222;
+    display: flex;
+}
+
+.bottom-col{
+    width: calc(100% / 3);
+    align-items: center;
+    /* debug */
+    border: 1px solid white;
+}
+
+.bottom-col-sx{
+    align-items: center;
+}
+
+.bottom-col-sx div{
+    text-align: center;
+    padding: 10px;
+    /* debug */
+    /* border: 1px solid orange; */
+}
+
+i{
+    padding-bottom: 5px;
 }
